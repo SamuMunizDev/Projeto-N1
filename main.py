@@ -19,7 +19,8 @@ while(sala != 9):
 
     caminho = int(input('''[1] para o caminho vermelho e [2] para o caminho preto: 
     '''))
-
+    if(sala == 6):
+       caminho = int(input("sala 6 só tem apenas um caminho, digite [1] para seguir:"))
     while(caminho < 1 or caminho > 2):
         caminho = int(input('''Existem apenas dois caminhos, escolha novamente com mais sabedoria..
 [1] para o caminho vermelho e [2] para o caminho preto:
@@ -46,3 +47,5 @@ else:
         print('''Voce está na sala: {}'''.format(sala))
         print('''Mas chegamos tarde demais e infelizmente nossa missão fracassou... 
     Game Over!''')
+
+
